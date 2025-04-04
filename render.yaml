@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: verssat
+    env: node
+    branch: main
+    buildCommand: npm run build:ssr
+    startCommand: npm run serve:ssr
+    runtime: node
+    region: oregon
+    plan: free
+    buildFilter:
+      paths:
+        - '**/*'
