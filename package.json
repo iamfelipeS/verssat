@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build:ssr": "npx ng build && npx ng run verssat:server",
+    "build:ssr": "ng build && ng run verssat:server",
     "serve:ssr": "node dist/verssat/server/main.js",
     "dev:ssr": "ng run verssat:serve-ssr",
     "watch": "ng build --watch --configuration development",
