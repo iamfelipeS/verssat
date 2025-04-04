@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build:ssr": "ng build && ng run verssat:server",
+    "build:ssr": "npx ng build && npx ng run verssat:server",
     "serve:ssr": "node dist/verssat/server/main.js",
     "dev:ssr": "ng run verssat:serve-ssr",
     "watch": "ng build --watch --configuration development",
@@ -31,7 +31,7 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^19.1.8",
-    "@angular/cli": "^19.1.8",
+    "@angular/cli": "^19.2.6",
     "@angular/compiler-cli": "^19.1.0",
     "@types/express": "^4.17.17",
     "@types/jasmine": "~5.1.0",
