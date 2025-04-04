@@ -1,5 +1,5 @@
 [build]
-command = "ng run frontend:server"
+command = "ng run verssat:server"
 functions = "netlify/functions"
 
 [[redirects]]
