@@ -36,7 +36,7 @@ app.get(
 );
 
 /**
- * Handle all other requests by rendering the Angular application.
+ * Handle all other requests by rendering the Angular application.- Passagem das rotas 
  */
 app.get('**', (req, res, next) => {
   const { protocol, originalUrl, baseUrl, headers } = req;
