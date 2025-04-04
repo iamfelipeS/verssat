@@ -4,11 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build:ssr": "",
-    "serve:ssr": "node dist/verssat/server/server.mjs",
-    "dev:ssr": "ng run verssat:serve-ssr",
+    "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "serve:ssr": "node dist/verssat/server/server.mjs"
   },
   "private": true,
   "dependencies": {

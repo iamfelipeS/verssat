@@ -1,7 +1,10 @@
-interface Player {
-    id: string;
-    name: string;
-    position: string;
-    rating: number; // 1 a 10
-  }
-  
+export interface Player {
+  id: string;
+  name: string;
+  position: string;
+  quality: number; 
+  speed: number; 
+  movement: number; 
+  phase: number; 
+  rating: number; 
+}

@@ -1,0 +1,8 @@
+[build]
+command = "ng run frontend:server"
+functions = "netlify/functions"
+
+[[redirects]]
+from = "/*"
+to = "/.netlify/functions/server"
+status = 200
