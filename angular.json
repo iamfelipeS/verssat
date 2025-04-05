@@ -70,7 +70,6 @@
             "outputPath": "dist/verssat/server",
             "main": "src/main.server.ts",
             "tsConfig": "tsconfig.server.json",
-            "serverIndexHtml": "src/index.html", 
             "externalDependencies": ["@netlify/angular-runtime"]
           },
           "configurations": {
