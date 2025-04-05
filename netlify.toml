@@ -1,15 +1,11 @@
-[build:]
-command: ng build && ng run verssat:server
-commandOrigin: config
-publish: /opt/build/repo/dist/verssat/browser
-publishOrigin: config
-functionsDirectory: /opt/build/repo/netlify/functions
-[plugins:]
-- inputs: {}
-  origin: ui
-  package: '@netlify/angular-runtime'
+[build]
+  command = "ng build && ng run verssat:server"
+  publish = "dist/verssat/browser"
+
+[functions]
+  directory = "netlify/functions"
+
 [[redirects]]
-- from: /*
-      status: 200
-      to: /.netlify/functions/server
-  redirectsOrigin: config
+  from = "/*"
+  to = "/.netlify/functions/server"
+  status = 200
