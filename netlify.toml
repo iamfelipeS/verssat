@@ -1,6 +1,6 @@
 [build]
-  command = "ng build && ng run verssat:server"
-  publish = "dist/verssat/browser"
+command = "ng build && ng run verssat:server && npm run postbuild"
+publish = "dist/verssat/browser"
 
 [functions]
   directory = "netlify/functions"
